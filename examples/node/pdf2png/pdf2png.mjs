@@ -59,8 +59,7 @@ const STANDARD_FONT_DATA_URL =
 const canvasFactory = new NodeCanvasFactory();
 
 // Loading file from file system into typed array.
-const pdfPath =
-  process.argv[2] || "../../../web/compressed.tracemonkey-pldi-09.pdf";
+const pdfPath = process.argv[2] || "../../../web/default.pdf";
 const data = new Uint8Array(fs.readFileSync(pdfPath));
 
 // Load the PDF file.

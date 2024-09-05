@@ -9,8 +9,7 @@
 import { getDocument } from "pdfjs-dist/legacy/build/pdf.mjs";
 
 // Loading file from file system into typed array
-const pdfPath =
-  process.argv[2] || "../../web/compressed.tracemonkey-pldi-09.pdf";
+const pdfPath = process.argv[2] || "../../web/default.pdf";
 
 // Will be using promises to load document, pages and misc data instead of
 // callback.
